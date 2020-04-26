@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+
+    <style>
+        textarea {
+            width: 800px;
+            height: 250px;
+            background-color: orange;
+        }
+        p {
+            width: 300px;
+        }
+    </style>
+        <script>
+            function loadStory() {
+                var storyName = document.getElementById(name_input).value
+                var storyHTML = localStorage.getItem(storyName)
+                document.getElementById(story_editor).value = storyHTML
+            }
+    
+            function saveStory() {
+                var storyName = document.getElementById(name_input).value
+                var storyHTML = document.getElementById(story_editor).value
+                localStorage.setItem(storyName, storyHTML)
+            }
+    
+            function dsiplayStory() {
+                var storyHTML = document.getElementById(story_editor).value
+                document.getElementById(story_display).innerHTML = storyHTML
+            }
+        </script>
+</head>
+
+<body>
+    <h1>Note</h1>
+    <h2>Importance of Mobile First</h2>
+    <p>Many people today are still trying to design for computer first. This shouldn't be the case. Just look at how
+        often you see people browsing their phones.
+        Many people will see your site in a web format, so we must be sure that experience is smooth. When we design for
+        mobile, we also need to be sure that the
+        weight of the pages is low for those on a 3G connection.
+    </p>
+
+    <h2>Example from Reading</h2>
+    <h3>Story Editor</h3>
+    Story Name:<input id=name_input></input>
+    <section>
+        <button onclick="loadStory()">Find and Edit It</button>
+        <button onclick="saveStory()">Save It</button>
+        <button onclick="displayStory()">Display It</button>
+    </section>
+    <textarea id="story_editor" placeholder="Write a totally awesome story
+         here."></textarea>
+    <section id="story_display"></section>
+</body>
+
+</html>
