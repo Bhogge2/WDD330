@@ -1,0 +1,26 @@
+#ticTacToe {
+    width: 100%;
+}
+
+tr {
+    display:flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+td {
+    width: 30vw;
+    height: 30vw;
+    font-size: 25vw;
+    text-align: center;
+}
+
+td:nth-child(2) {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+tr:nth-child(2) {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
