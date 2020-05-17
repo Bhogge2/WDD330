@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Week 4</title>
+    <link rel='stylesheet' href='scripts/styles.css'>
 </head>
+
 <body>
-    
+    <h1>Notes</h1>
+    <h2>Forms</h2>
+    <ul>
+        <li>const form = document.forms[0]</li>
+        <li>input.addEventListener('blur', () => alert('blurred'), false);</li>
+        <li>preventDefault stops the form from being submitted</li>
+        <li>You can use the placeholder attribute on inputs</li>
+        <li>Use select and options for a dropdown list</li>
+    </ul>
+    <h2>Object-Oriented Programming in Javascript</h2>
+    <ul>
+        <li>Encapsulaation: Keep the inner workings inside the object</li>
+        <li>Polymorphism: Same process can be used for different objects</li>
+        <li>Inheritance: taking the features of one object then adding some new features</li>
+        <li>Classes: use a class to define a blueprint for an object</li>
+        <li>Constructors: To be run when the new object is created</li>
+        <li>Inheritance uses the keyword "extends"</li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <section class='dojo'>
+        <div class='quiz-body'>
+            <header>
+                <h1>Quiz Ninja!</h1>
+                <div id='timer'>Time: <strong>20</strong></div>
+                <div id='score'>Score: <strong>0</strong></div>
+            </header>
+            <div id='question'></div>
+            <div id='response'></div>
+            <div id='result'></div>
+            <div id='info'></div>
+            <button id='start'>Click to Start</button>
+        </div>
+    </section>
+    <script src='scripts/main.js'></script>
 </body>
+
 </html>
