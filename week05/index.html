@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+    <link rel='stylesheet' href='scripts/styles.css'>
+</head>
+
+<body>
+    <h1>Notes</h1>
+    <h2>Testing and Debugging</h2>
+    <ul>
+        <li>Exception: An error that produces a return value that can then be used by the program to deal with the error
+        </li>
+        <li>Warnings: A warning can occur if there’s an error in the code that isn't enough to cause the program to
+            crash</li>
+        <li>'use strict'; This makes Javascript more strict with its rules and doesn't allow for sloppy coding</li>
+        <li>Feature Detection can be done as follows if (window.holoDeck) {
+            virtualReality.activate();}</li>
+        <li>Browser Debugging tools, alerts and the console are great to debug you code</li>
+        <li>Try, catch, and finally are all used in exception handling</li>
+    </ul>
+
+    <h1>Example</h1>
+    <section class='dojo'>
+        <div class='quiz-body'>
+            <header>
+                <h1>Quiz Ninja!</h1>
+                <div id='timer'>Time: <strong>20</strong></div>
+                <div id='score'>Score: <strong>0</strong></div>
+            </header>
+            <div id='question'></div>
+            <form id='response'>
+                <input name='answer' type='text'>
+                <button type='submit'>Submit Answer</button>
+            </form>
+            <div id='result'></div>
+            <div id='info'></div>
+            <button id='start'>Click to Start</button>
+        </div>
+    </section>
+    <script src='scripts/mainNotes.js'></script>
+</body>
+
+</html>
