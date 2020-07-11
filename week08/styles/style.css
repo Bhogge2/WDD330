@@ -1,0 +1,139 @@
+  .content {
+      width: 500px;
+      height: 500px;
+      border: 1px solid;
+
+  }
+
+  .red {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: orbit 3s infinite;
+  }
+
+  .green {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation: spin-green 3s infinite;
+  }
+
+  .yellow {
+      width: 100px;
+      height: 100px;
+      background-color: gold;
+      animation: flip 3s infinite;
+  }
+
+  .blue {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: spin-blue 3s infinite;
+  }
+
+  .orange {
+      width: 100px;
+      height: 100px;
+      background-color: #FF4500;
+      animation: reverse-orbit 3s infinite;
+  }
+
+  @keyframes orbit {
+      25% {
+          transform: translatex(400px);
+      }
+
+      50% {
+          transform: translate(400px, 400px);
+      }
+
+      75% {
+          transform: translate(0, 400px);
+      }
+
+      100% {
+          transform: translate(0, 0);
+      }
+  }
+
+  @keyframes reverse-orbit {
+      25% {
+          transform: translatex(400px);
+      }
+
+      50% {
+          transform: translate(400px, -400px);
+      }
+
+      75% {
+          transform: translate(0, -400px);
+      }
+
+      100% {
+          transform: translate(0, 0);
+      }
+  }
+
+  @keyframes flip {
+      25% {
+          transform: translate(200px, 0);
+      }
+
+      50% {
+          transform: translate(200px, 0) rotatey(180deg);
+      }
+
+      75% {
+          transform: translate(200px, 0) rotatey(0);
+      }
+
+      100% {
+          transform: translate(0, 0);
+      }
+  }
+
+  @keyframes spin-green {
+      20% {
+          transform: translate(300px, 0)
+      }
+
+      40% {
+          transform: translate(300px, 200px) rotatey(180deg);
+      }
+
+      60% {
+          transform: translate(100px, 200px) rotatey(180deg);
+      }
+
+      80% {
+          transform: translate(100px, 0) rotatey(0);
+      }
+
+      100% {
+          transform: translate(0, 0)
+      }
+  }
+
+  @keyframes spin-blue {
+      20% {
+          transform: translate(300px, 0)
+      }
+
+      40% {
+          transform: translate(300px, -200px) rotatey(180deg);
+      }
+
+      60% {
+          transform: translate(100px, -200px) rotatey(180deg);
+      }
+
+      80% {
+          transform: translate(100px, 0) rotatey(0);
+      }
+
+      100% {
+          transform: translate(0, 0)
+      }
+    }

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    color: darkred;
+    padding: 5px;
+    margin: 0;
+}
+
+
+/* Returned List*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#resultList li{
+    font-size: 2em;
+    color: rgb(102, 164, 200);
+    padding: 5px;
+    margin: 15px;
+    background-color: rgb(139, 61, 61);
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/*Button*/
+button{
+    height: 40px;
+    color: rgb(102, 164, 200);
+    background-color: rgb(139, 61, 61);
+    border: 1px black solid;
+    font-size: 1.5rem;
+    width: 120px;
+    margin: 10px;
+}
+
+/* Paginated List */
+#pageNumbers{
+    display: flex;
+    justify-content: space-around;
+}
+
+#pageNumbers li{
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(30, 131, 43);
+    border-radius: 15px;
+    margin: 5px
+}
+
+#pageNumbers .wayfinder{
+    background-color: rgb(139, 61, 61);
+}
