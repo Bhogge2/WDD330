@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 1</title>
+    <link rel="stylesheet" href="../style/style.css">
 
     <style>
         textarea {
@@ -37,6 +38,23 @@
 </head>
 
 <body>
+    <div class="dropdown">
+        <button class="dropbtn" onclick="openDropdown()">Menu</button>
+        <div id = "myDropdown" class="dropdown-content">
+            <a href="../week01/">Week 1</a>
+            <a href="../week02/">Week 2</a>
+            <a href="../week03/">Week 3</a>
+            <a href="../week04/">Week 4</a>
+            <a href="../week05/">Week 5</a>
+            <a href="../week07/">Week 7</a>
+            <a href="../week08/">Week 8</a>
+            <a href="../week09/">Week 9</a>
+            <a href="../week10/">Week 10</a>
+            <a href="../week11/">Week 11</a>
+
+        </div>
+    </div>
+
     <h1>Notes</h1>
     <h2>Importance of Mobile First</h2>
     <p>Many people today are still trying to design for computer first. This shouldn't be the case. Just look at how
@@ -57,6 +75,7 @@
     <textarea id="story_editor" placeholder="Write a totally awesome story
          here."></textarea>
     <section id="story_display"></section>
+    <script src="../dropdown.js"></script>
 </body>
 
 </html>
