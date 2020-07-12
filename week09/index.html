@@ -13,7 +13,7 @@
 <body>
     <div class="dropdown">
         <button class="dropbtn" onclick="openDropdown()">Menu</button>
-        <div id = "myDropdown" class="dropdown-content">
+        <div id="myDropdown" class="dropdown-content">
             <a href="../week01/">Week 1</a>
             <a href="../week02/">Week 2</a>
             <a href="../week03/">Week 3</a>
@@ -32,12 +32,40 @@
     <h2>The Window Object</h2>
     <ul>
         <li>You can use the window.confirm()</li>
-        <li></li>
+        <li>Windows are good for dialogs that help the user to focus on something</li>
+        <li>Windows need to br used carefully</li>
+        <li>You can get lots of information from the browser</li>
+        <li>Cookies can be used to remember information about the seesion or user</li>
     </ul>
+    <h2>HTML5 APIs</h2>
+    <ul>
+        <li>APIs can give access to cameras, batteries, geolocation and pgraphics cards, to name a few</li>
+        <li>localStorage is part of the Web Storage API</li>
+        <li>navigator.geolocation.getCurrentPosition(youAreHere);</li>
+        <li>You can get APIs from places or you can create your own APIs</li>
+        <li>Learning to use APIs will grant many more functions and data when building a website</li>
+    </ul>
+
+    <section class='dojo'>
+        <div class='quiz-body'>
+            <h1>Quiz Ninja!</h1>
+            <div id='timer'>Time: <strong>20</strong></div>
+            <div id='score'>Score: <strong>0</strong></div>
+            <div id='question'></div>
+            <form id='response'>
+                <input name='answer' type='text'>
+                <button type='submit'>Submit Answer</button>
+            </form>
+            <div id='result'></div>
+            <div id='info'></div>
+            <button id='start'>Click to Start</button>
+        </div>
+    </section>
 
 
     <script src='scripts/mainNotes.js'></script>
     <script src="../dropdown.js"></script>
+    <script src="scripts/main.js"></script>
 
 </body>
 
