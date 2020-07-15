@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 4</title>
-    <link rel='stylesheet' href='scripts/styles.css'>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles/todo.css">
     <link rel="stylesheet" href="../style/style.css">
-
 </head>
-
 <body>
+    <h1>To Do List</h1>
     <div class="dropdown">
         <button class="dropbtn" onclick="openDropdown()">Menu</button>
         <div id = "myDropdown" class="dropdown-content">
@@ -28,13 +26,25 @@
 
         </div>
     </div>
-    <h1>Notes</h1>
-    <h2></h2>
+    <div class="navBar">
+        <span id="allItems" class="active">All</span>
+        <span id="currentItems">Active</span>
+        <span id="completedItems">Completed</span>
+        <span id="clearItems">Clear</span>
+    </div>
 
-
-    <script src='scripts/mainNotes.js'></script>
+    <div class="toDoItems">
+        <ul id="toDoList">
+            <li>Nothing on your list.</li>
+        </ul>
+        <div class="addItem">
+            <form id="addToDo" action="" name="addToDo">
+                <input id="inputAddToDo" type="text" name="addToDo" placeholder="Add an item to your To Do List..." required>
+                <button id="submitToDoItem" type="submit">+</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
     <script src="../dropdown.js"></script>
-
 </body>
-
 </html>
